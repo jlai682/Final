@@ -1,1 +1,1 @@
-var id = "abcd";
+var id = "";
