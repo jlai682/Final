@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <img class="Home pic" href="style.css">
+  <script src = "script.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="topnav id="myTopnav"">
+		<a href="index.html" class="active">Home</a>
+		<!--<a href="Exercises.html">Exercises</a>-->
+    <div class="dropdown">
+    <button class="dropbtn">AP Courses
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="courses/Biology.html">Biology AP</a>
+      <a href="courses/ComputerScience.html">Computer Science A AP</a>
+      <a href="courses/History.html">U.S History AP</a>
+    </div>
+  </div> 
+    <a href="LiveHub.html">Live Hub</a>
+		<a href="tips.html">Tips Forum</a>
+		<a href="contact.html">Contact</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+	</nav>
+<div class="container">
+  <div style="text-align:center">
+    <h1>Contact Us</h1>
+    <p>Leave us a message:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="first name" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        </select>
+        <label for="Question">What would you like to say to us?</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

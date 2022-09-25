@@ -1,0 +1,9 @@
+language = "html5"
+run = ""
+
+[nix]
+channel = "stable-21_11"
+
+[auth]
+pageEnabled = false
+buttonEnabled = false

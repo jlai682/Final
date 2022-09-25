@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="stylestips.css" />
+  </head>
+
+  <body>
+  <header>
+    <img src="https://cdn.discordapp.com/attachments/1023278603695308894/1023377556323450970/apeople2.png" alt="APeople" class = center;>
+      <nav class="topnav id="myTopnav"">
+		<a href="index.html" class="active">Home</a>
+		<!--<a href="Exercises.html">Exercises</a>-->
+    <div class="dropdown">
+    <button class="dropbtn">AP Courses 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="courses/Biology.html">Biology AP</a>
+      <a href="courses/ComputerScience.html">Computer Science A AP</a>
+      <a href="courses/History.html">U.S History AP</a>
+    </div>
+  </div> 
+    <a href="LiveHub.html">Live Hub</a>
+		<a href="tips.html">Tips Forum</a>
+		<a href="contact.html">Contact</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+	</nav>
+    <main>
+      <form id="studentForm">
+        <input type="text" placeholder="Full Name" name="name" required />
+        <input type="text" placeholder="What AP?" name="age" required />
+        <input type="text" placeholder="Tip" name="roll" required />
+        <button>Add student</button>
+      </form>
+      <div class="students"></div>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
