@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <body>
+  <script>
+    
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+
+    script.addEventListener("load", function (event) {
+      const config = {
+        
+        meetingId: "biology",
+        apiKey: "e8926392-22c3-4102-9619-52dea126879a",
+
+        containerId: null,
+
+        micEnabled: true,
+        webcamEnabled: true,
+        participantCanToggleSelfWebcam: true,
+        participantCanToggleSelfMic: true,
+
+        chatEnabled: true,
+        screenShareEnabled: true,
+
+        joinScreen: {
+          visible: true, // Show the join screen ?
+          title: "AP U.S History Room" //input question here
+        },
+
+        redirectOnLeave: "https://jlai682.github.io/Final/index.html", 
+      };
+
+      const meeting = new VideoSDKMeeting();
+      meeting.init(config);
+    });
+
+    script.src =
+    "https://sdk.videosdk.live/rtc-js-prebuilt/0.3.20/rtc-js-prebuilt.js";
+  document.getElementsByTagName("head")[0].appendChild(script);
+
+  </script>
+  </body>
+
+</html>
